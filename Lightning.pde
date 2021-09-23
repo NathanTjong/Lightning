@@ -5,7 +5,6 @@ void setup(){ // setting default background and window sizing
 }
 void draw(){ //not sure why this is still needed but its there
 }
-}
 void mouseClicked(){ //resets the background on click
   lightning((int)(Math.random()*255), (int)(Math.random()*255), (int)(Math.random()*255));
   fill(255, 255, 255, 40);//and slowly fades the lightning by creating clear bakgrounds
