@@ -38,7 +38,6 @@ void lightning(int r, int g, int b){ //defining the lightning function
   //test/debug section
   int formatStuff=0;
   for (Integer i : numbersY ){
-    System.out.println(i + "  "+ numbersX.get(formatStuff));
     formatStuff+=1;
   }
 }
