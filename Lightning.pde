@@ -41,6 +41,6 @@ void lightningBolt(int r, int g, int b){ //defining the lightning function
 }
   for(int i=0; i<19; i++){
     stroke(r, g, b);
-    line(numbersX.get(i), sorted.get(i), numbersX.get(i+1), 400);
+    line(numbersX.get(i), sorted.get(i), numbersX.get(i+1), sorted.get(i+1));
   }
 }
