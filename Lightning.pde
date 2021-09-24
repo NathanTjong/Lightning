@@ -38,8 +38,8 @@ void lightningBolts(int r, int g, int b){ //defining the lightning function
   sorted.add(minimum);
   numbersY.remove((Integer)minimum);
 }
-  for(int i=0; i<19; i--){
+  for(int i=0; i<19; i++){
     stroke(r, g, b);
-    line(numbersX.get(i), sorted.get(i), numbersX.get(i-1), sorted.get(i-1));
+    line(numbersX.get(i), sorted.get(i), numbersX.get(i+1), sorted.get(i+1));
   }
 }
