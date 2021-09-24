@@ -1,4 +1,3 @@
-import java.util.*; //library used for arrayLists
 void setup(){ // setting default background and window sizing
   size(400, 400);
   background(255);
