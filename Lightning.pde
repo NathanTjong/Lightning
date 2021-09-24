@@ -8,7 +8,7 @@ void draw(){
 void mouseClicked(){ //resets the background on click
   lightningBolts((int)(Math.random()*255), (int)(Math.random()*255), (int)(Math.random()*255));
   fill(255, 255, 255, 40);//and slowly fades the lightning by creating clear bakgrounds
-  rect(-1, -1, 401, 401);// that slowly cover the lightning
+  rect(2, 2, 401, 401);// that slowly cover the lightning
 }
 void lightningBolts(int r, int g, int b){ //defining the lightning function
 //(honestly way more complicated than it needs to be)
