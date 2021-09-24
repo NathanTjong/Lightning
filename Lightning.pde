@@ -39,10 +39,8 @@ void lightningBolt(int r, int g, int b){ //defining the lightning function
   numbersY.remove((Integer)minimum);
 
 }
-int drawvar=0;
-while(drawvar<sorted.size()-1){
-stroke(r, g, b);
-line(numbersX.get(drawvar), sorted.get(drawvar), numbersX.get(drawvar+1), sorted.get(drawvar+1));
-drawvar+=1;
-}
+  for(int i=0; i<19; i++){
+    stroke(r, g, b);
+    line(numbersX.get(i), sorted.get(i), numbersX.get(i+1), sorted.get(i+1));
+  }
 }
