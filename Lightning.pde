@@ -1,6 +1,6 @@
 void setup(){ // setting default background and window sizing
   size(400, 400);
-
+  background(255);
 }
 void draw(){ 
 //not sure why this is still needed but its there
@@ -16,8 +16,8 @@ void lightningBolts(int r, int g, int b){ //defining the lightning function
   ArrayList <Integer> numbersY=new ArrayList <Integer> ();
   int ascendingSeed=0;
   for(int i=0; i<20; i++){
-    numbersY.add((int)(Math.random()*ascendingSeed+250));
-    ascendingSeed+=150;
+    numbersY.add((int)(Math.random()*ascendingSeed));
+    ascendingSeed+=40;
   }
   //Generate X coordinates
   ArrayList <Integer> numbersX=new ArrayList <Integer>();
