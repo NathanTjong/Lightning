@@ -29,14 +29,14 @@ void lightningBolt(int r, int g, int b){ //defining the lightning function
   //Sorting Y
   ArrayList<Integer> sorted = new ArrayList <Integer>();
   while(sorted.size()<20){
-    int minimum=numbersY.get(0);
+    Integer minimum=numbersY.get(0);
     for(int i=0; i<numbersY.size(); i++){
      if(numbersY.get(i)<minimum){
        minimum=numbersY.get(i);
     }
   }
   sorted.add(minimum);
-  numbersY.remove((Integer)minimum);
+  numbersY.remove(minimum);
 
 }
   for(int i=0; i<19; i++){
