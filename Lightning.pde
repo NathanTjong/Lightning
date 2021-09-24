@@ -1,14 +1,14 @@
 void setup(){ // setting default background and window sizing
-  size(400, 800);
+  size(400, 500);
   background(255);
 }
 void draw(){ 
 //not sure why this is still needed but its there
 }
-void mouseClicked(){ //resets the background on click
+void mouseWheel(MouseEvent event){ //mousewheel
   lightningBolts((int)(Math.random()*255), (int)(Math.random()*255), (int)(Math.random()*255));
   fill(255, 255, 255, 40);//and slowly fades the lightning by creating clear bakgrounds
-  rect(2, 2, 401, 401);// that slowly cover the lightning
+  rect(-1, -1, 501, 501);// that slowly cover the lightning
 }
 void lightningBolts(int r, int g, int b){ //defining the lightning function
 //(honestly way more complicated than it needs to be)
