@@ -2,8 +2,7 @@ void setup(){ // setting default background and window sizing
   size(400, 400);
   background(255);
 }
-void draw(){ 
-background(255);//not sure why this is still needed but its there
+void draw(){ //not sure why this is still needed but its there
 }
 void mouseClicked(){ //resets the background on click
   lightningBolts((int)(Math.random()*255), (int)(Math.random()*255), (int)(Math.random()*255));
