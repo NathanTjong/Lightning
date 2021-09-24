@@ -1,6 +1,6 @@
 void setup(){ // setting default background and window sizing
   size(400, 500);
-  background(255);
+
 }
 void draw(){ 
 //not sure why this is still needed but its there
