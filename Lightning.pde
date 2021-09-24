@@ -1,5 +1,5 @@
 void setup(){ // setting default background and window sizing
-  size(400, 500);
+  size(400, 400);
 
 }
 void draw(){ 
