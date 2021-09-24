@@ -30,7 +30,7 @@ void lightningBolt(int r, int g, int b){ //defining the lightning function
   ArrayList<Integer> sorted=new ArrayList<Integer>();
   while(sorted.size()<20){
     int minimum=numbersY.get(0);
-    for(int i=0; i<numbersY.size(); i++){
+    for(int i=0; i<numbersY.size()-1){
      if(numbersY.get(i)<minimum){
        minimum=numbersY.get(i);
     }
