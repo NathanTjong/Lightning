@@ -5,7 +5,7 @@ void setup(){ // setting default background and window sizing
 void draw(){ 
 //not sure why this is still needed but its there
 }
-void mouseWheel(MouseEvent event){ //mousewheel
+void mouseClicked(){ //mousewheel
   lightningBolts((int)(Math.random()*255), (int)(Math.random()*255), (int)(Math.random()*255));
   fill(255, 255, 255, 40);//and slowly fades the lightning by creating clear bakgrounds
   rect(-1, -1, 501, 501);// that slowly cover the lightning
