@@ -36,7 +36,7 @@ void lightningBolts(int r, int g, int b){ //defining the lightning function
     }
   }
   sorted.add(minimum);
-  numbersY.remove(Integer.valueOf(minimum));
+  numbersY.remove((Integer)minimum);
 }
   for(int i=0; i<19; i++){
     stroke(r, g, b);
