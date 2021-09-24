@@ -26,16 +26,21 @@ void lightning(int r, int g, int b){ //defining the lightning function
     numbersX.add((int)(xCoord+Math.random()*30));
     ascendingSeed+=40;
   }
-  //Using X and Y coordinates to draw
-  Collections.sort(numbersY);
+  //Sorting Y
+  ArrayList<Integer> sorted=new ArrayList<Integer>();
+  while(sorted.size()<20){
+    int minimum=numbersY.get(0);
+    for(int i=0; i<numbersY.size(); i++){
+     if(numbersY.get(i)<minimum){
+       minimum=numbersY.get(i);
+    }
+  }
+  sorted.add(minimum);
+  numbersY.remove(Integer.valueOf(minimum));
+  System.out.println(numbersY);
+  System.out.println(sorted);
+}
   for(int i=0; i<19; i++){
     stroke(r, g, b);
-    line(numbersX.get(i), numbersY.get(i), numbersX.get(i+1), numbersY.get(i+1));
+    line(numbersX.get(i), sorted.get(i), numbersX.get(i+1), sorted.get(i+1));
   }
-  //test/debug section
-  int formatStuff=0;
-  for (Integer i : numbersY ){
-    System.out.println(i + "  "+ numbersX.get(formatStuff));
-    formatStuff+=1;
-  }
-}
