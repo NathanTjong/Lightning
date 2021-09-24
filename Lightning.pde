@@ -6,14 +6,14 @@ void setup(){ // setting default background and window sizing
 void draw(){ //not sure why this is still needed but its there
 }
 void mouseClicked(){ //resets the background on click
-  lightning((int)(Math.random()*255), (int)(Math.random()*255), (int)(Math.random()*255));
+  lightningBolts((int)(Math.random()*255), (int)(Math.random()*255), (int)(Math.random()*255));
   fill(255, 255, 255, 40);//and slowly fades the lightning by creating clear bakgrounds
   rect(-1, -1, 401, 401);// that slowly cover the lightning
 }
-void lightning(int r, int g, int b){ //defining the lightning function
+void lightningBolts(int r, int g, int b){ //defining the lightning function
 //(honestly way more complicated than it needs to be)
   //generate Y coordinates
-  ArrayList<Integer> numbersY=new ArrayList<Integer>();
+  ArrayList <Integer> numbersY=new ArrayList <Integer> ();
   int ascendingSeed=0;
   for(int i=0; i<20; i++){
     numbersY.add((int)(Math.random()*ascendingSeed));
@@ -27,7 +27,7 @@ void lightning(int r, int g, int b){ //defining the lightning function
     ascendingSeed+=40;
   }
   //Sorting Y
-  ArrayList<Integer> sorted=new ArrayList<Integer>();
+  ArrayList <Integer> sorted=new ArrayList <Integer> ();
   while(sorted.size()<20){
     int minimum=numbersY.get(0);
     for(int i=0; i<numbersY.size(); i++){
