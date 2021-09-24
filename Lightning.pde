@@ -17,7 +17,7 @@ void lightningBolts(int r, int g, int b){ //defining the lightning function
   int ascendingSeed=0;
   for(int i=0; i<20; i++){
     numbersY.add((int)(Math.random()*ascendingSeed));
-    ascendingSeed+=150;
+    ascendingSeed+=500;
   }
   //Generate X coordinates
   ArrayList <Integer> numbersX=new ArrayList <Integer>();
