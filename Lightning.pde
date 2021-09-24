@@ -13,21 +13,21 @@ void mouseClicked(){ //resets the background on click
 void lightningBolt(int r, int g, int b){ //defining the lightning function
 //(honestly way more complicated than it needs to be)
   //generate Y coordinates
-  ArrayList <Integer> numbersY=new ArrayList <Integer>();
+  ArrayList <Integer> numbersY = new ArrayList <Integer>();
   int ascendingSeed=0;
   for(int i=0; i<20; i++){
     numbersY.add((int)(Math.random()*ascendingSeed));
     ascendingSeed+=40;
   }
   //Generate X coordinates
-  ArrayList <Integer> numbersX=new ArrayList<Integer>();
+  ArrayList <Integer> numbersX = new ArrayList <Integer>();
   int xCoord=(int)(Math.random()*400);
   for(int i=0; i<20; i++){
     numbersX.add((int)(xCoord+Math.random()*30));
     ascendingSeed+=40;
   }
   //Sorting Y
-  ArrayList<Integer> sorted=new ArrayList<Integer>();
+  ArrayList<Integer> sorted = new ArrayList <Integer>();
   while(sorted.size()<20){
     int minimum=numbersY.get(0);
     for(int i=0; i<numbersY.size(); i++){
