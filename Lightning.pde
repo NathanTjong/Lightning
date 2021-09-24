@@ -40,9 +40,9 @@ void lightningBolt(int r, int g, int b){ //defining the lightning function
 
 }
 int drawvar=0;
-while(drawvar<sorted.size()){
+while(drawvar<sorted.size()-1){
 stroke(r, g, b);
-line(numbersX.get(i), sorted.get(i), numbersx.get(i+1), sorted.get(i+1);
+line(numbersX.get(drawvar), sorted.get(drawvar), numbersx.get(drawvar+1), sorted.get(drawvar+1));
 drawvar+=1;
 }
 }
